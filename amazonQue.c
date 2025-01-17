@@ -2,19 +2,24 @@
 #define MAX 20
 int main(){
     int a[MAX],sum[MAX],add,i,n,cnt=0,cnt2;
+
+    //accept size from user
     printf("Enter a N : ");
     scanf("%d",&n);
 
     printf("Enter %d elements : \n",n);
+    //Accepting n numbers
     for(i=0;i<n;i++){
         scanf("%d",&a[i]);
     }
 
+    //printing actual array
     printf("\nGiven array is\n");
         for(i=0;i<n;i++){
             printf("%d ",a[i]);
         }
 
+    //applying main logic
     while(n!=2){
         add = 0;
         cnt = 0;
@@ -29,11 +34,14 @@ int main(){
             a[i] = sum[i];
         }
 
+        //printing arrays 
         printf("\nPrinting....\n");
         for(i=0;i<n;i++){
             printf("%d ",a[i]);
         }
     }
+
+     //printing result
      printf("\nThe result is\n");
         for(i=0;i<n;i++){
             printf("%d",a[i]);
