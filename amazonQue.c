@@ -35,7 +35,7 @@ int main(){
         }
 
         //printing arrays 
-        printf("\nPrinting....\n");
+        printf("\nPrinting sub arrays\n");
         for(i=0;i<n;i++){
             printf("%d ",a[i]);
         }
