@@ -1,7 +1,7 @@
 #include<stdio.h>
 #define MAX 20
 int main(){
-    int a[MAX],sum[MAX],add,i,n,cnt=0,cnt2;
+    int a[MAX],sum[MAX],add,i,n,cnt=0,cnt2,result;
 
     //accept size from user
     printf("Enter a N : ");
@@ -43,8 +43,7 @@ int main(){
 
      //printing result
      printf("\nThe result is\n");
-        for(i=0;i<n;i++){
-            printf("%d",a[i]);
-        }
+        result = (a[0]*10) + a[1];
+        printf("%d",result);
     return 0;
 }
