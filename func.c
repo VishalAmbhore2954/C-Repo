@@ -2,28 +2,25 @@
 #include<stdlib.h>
 
 int add(int a,int b){
-    int add = a+b;
-    return add;
+    return a+b;
 }
 
 int sub(int a,int b){
-    int sub = a-b;
-    return sub;
+    return a-b;
 }
 
 int mul(int a,int b){
-    int mul = a*b;
-    return mul;
+    return a*b;
 }
 
-int div1(int a,int b){
-    int div = a/b;
-    return div;
+float div1(float a,float b){
+    return a/b;
 }
 
 
 int main(){
-    int a,b,ch,a1,s,m,d;
+    int a,b,ch,a1,s,m;
+    float d;
     printf("Enter two numbers : ");
     scanf("%d%d",&a,&b);
     printf("1. Addtion\n");
@@ -49,7 +46,7 @@ int main(){
             break;
         case 4:
             d = div1(a,b);
-            printf("Division is %d\n",d);
+            printf("Division is %.2f\n",d);
             break;
         case 5:
             printf("You are exit now\n");
